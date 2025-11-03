@@ -44,6 +44,9 @@ A classe `MemorySimulator` deve aceitar os seguintes parâmetros:
 | `num_frames`      | Número de quadros na memória física                                 |
 | `rep_policy`      | Política de substituição de páginas (`LRU` ou `SecondChance`)       |
 
+> **Observação:**  `page_size`, `num_tlb_entries` e `num_frames` devem ser potências de 2.
+
+
 ## Funcionalidades a Implementar
 
 ### Método principal
@@ -61,10 +64,9 @@ Você pode implementar metódos auxiliares para o método princial, alguns recom
 * Método para alocação de frames na memória física
 * Método para implementação das políticas `LRU` ou `SecondChance`
 
-Não é obrigatório essas implementações mas deixa o código mais organizado. 
+Essas implementações não são obrigatórias, mas contribuem para um código mais organizado e legível. Documente claramente cada função auxiliar, explicando seu papel no simulador.
 
-> **Observação:** Documente claramente cada função auxiliar, explicando seu papel no simulador.
-
+> **Observação:**  A política de substituição da TLB é **obrigatoriamente** LRU. O parâmetro `rep_policy` é apenas para substituição em caso de tratamento de *page fault*. Além disso, assuma que todos os endereços de entrada pertencem ao espaço de endereçamento do processo.
 
 ## Testes
 
