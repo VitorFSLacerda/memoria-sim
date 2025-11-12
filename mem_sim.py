@@ -79,7 +79,7 @@ class MemorySimulator:
         print("=" * 60)
         print("SIMULADOR DE MEMÓRIA - Estatísticas de Acesso")
         print("=" * 60)
-        print(f"Política de Substituição:   {self.rep_policy}")
+        print(f"Política de Substituição:   {self.rep_policy} (TLB e Memória)")
         print(f"Tamanho da Página:          {self.page_size} bytes")
         print(f"Entradas na TLB:            {self.num_tlb_entries}")
         print(f"Número de Frames:           {self.num_frames}")

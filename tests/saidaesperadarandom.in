@@ -1,7 +1,7 @@
 ============================================================
 SIMULADOR DE MEMÓRIA - Estatísticas de Acesso
 ============================================================
-Política de Substituição:   LRU
+Política de Substituição:   LRU (TLB e Memória)
 Tamanho da Página:          4096 bytes
 Entradas na TLB:            16
 Número de Frames:           64
